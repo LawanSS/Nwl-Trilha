@@ -85,12 +85,12 @@ const novoParticipante = function(participante) {
                 ${participante.email}
             </small>
         </td>
-        <td>
-            ${dataInscricao}
-        </td>
-        <td>
-            ${dataCheckIn}
-        </td>
+            <td>
+                ${dataInscricao}
+            </td>
+            <td>
+                ${dataCheckIn}
+            </td>
     </tr>
     `
 }

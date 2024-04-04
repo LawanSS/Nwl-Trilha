@@ -1,11 +1,13 @@
 :root {
     /* Font */
     --font-inconsolata: "Inconsolata", monospace, sans-serif;
+    
 
     /* COLORS */
 
     --bg-color: black;
     --text-color: white;
-    --line-table-color: rgba(97, 175, 97, 0.468);
-    --button-color: rgba(97, 212, 97, 0.752);
+    --line-table-color: #F0C21F;
+    --button-color: #e0b416e1;
+    --bg-button-color: #f9c715;
 }

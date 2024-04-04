@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="src/styles/reset.css">
     <link rel="stylesheet" href="src/styles/vars.css">
     <link rel="stylesheet" href="src/styles/main-content.css">
@@ -13,35 +15,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 
-    <!-- Formatação Data -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Formatação da Data -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
     <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
     
-    <!-- Idioma Data -->
+    <!-- Idioma da Data -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
     <script>dayjs.locale('pt-br')</script>
-
 
     <title>NWL unite</title>
 </head>
 
 <body>
 
+    <div class="container">
+
+<header>
+    <span class="material-symbols-outlined">
+        code_blocks
+    </span>
+
+</header>
+
+
     <form onsubmit="adicionarParticipante(event)">
         <fieldset>
             <legend>Inscrição</legend>
 
             <div>
-                <input type="text" 
-                placeholder="Nome Completo" 
-                name="nome"
-                required>
 
-                <input type="email"
-                placeholder="E-mail"
-                name="email" 
-                required>
+                <div class="input-wrapper">
+
+                        <span class="material-symbols-outlined">person_add</span>
+
+                    <input type="text" 
+                    placeholder="Nome Completo" 
+                    name="nome"
+                    required>
+
+                </div>
+                
+                <div class="input-wrapper">
+
+                        <span class="material-symbols-outlined">mail</span>
+
+                    <input type="email"
+                    placeholder="E-mail"
+                    name="email" 
+                    required>
+
+                </div>
 
                 <button>
                     Realizar Inscrição
@@ -51,20 +78,28 @@
         </fieldset>
     </form>
 
-    <table width="100%">
-        <thead style="text-align: left;">
-            <tr>
-                <th>Participante</th>
-                <th>Data da inscrição</th>
-                <th>Data do check-in</th>
-            </tr>
-        </thead>
+    <section class="lista-participantes">
 
-        <tbody>
-            
-        </tbody>
+        <h2>Participantes</h2>
 
-    </table>
+        <div>
+            <table width="100%">
+                <thead style="text-align: left;">
+                    <tr>
+                        <th>Participante</th>
+                        <th>Data da inscrição</th>
+                        <th>Data do check-in</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
 </body>

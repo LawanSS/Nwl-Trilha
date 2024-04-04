@@ -2,13 +2,79 @@ body, table, input, button {
     font: 16px/90% var(--font-inconsolata);
 }
 
-body, fieldset{  
-    background-color: var(--bg-color);
+header {
+    padding: 20px 2px;
+    color: var(--line-table-color);
+}
+
+header .material-symbols-outlined {
+    font-size: 35px;
+}
+
+body{  
+    background-image:linear-gradient(45deg, #2B2E33, rgb(0, 0, 0),#434eb0e7);
+    background-attachment: fixed;
     color: var(--text-color);
 }
 
-fieldset {
-    border: 2px solid var(--line-table);
+.container {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 20px 32px;
+}
+
+form {
+    border: 1px solid var(--line-table-color);
+    border-inline: none;
+    padding: 15px 10px;
+}
+
+
+fieldset > div {
+    display: flex;
+    gap: 12px;
+    padding: 15px 0px;
+}
+
+.input-wrapper {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    gap:  10px;
+
+    border: 1px solid var(--line-table-color);
+    border-radius: 10px;
+    padding: 8px 10px;
+    box-shadow: none;
+    background: transparent;
+}
+
+fieldset legend, section h2 {
+    font: 700 16px/140% var(--font-inconsolata);
+    padding-bottom: 16px;
+}
+
+fieldset button {
+    width: fit-content;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    padding: 1px 3px;
+
+    font: 700 13px/24px var(--font-inconsolata);
+}
+
+fieldset button:hover {
+    background-color: var(--bg-button-color);
+}
+
+.lista-participantes {
+    padding: 20px 0px;
+}
+
+.lista-participantes > div {
+    border: 1px solid var(--line-table-color);
+    border-radius: 10px;
 }
 
 table thead{
@@ -40,8 +106,13 @@ tbody td small {
 
 tbody td button {
     color: var(--button-color);
+    font-size: 14px;
 }
 
 tbody td button:hover {
     text-decoration: underline;
+}
+
+.td-height {
+    padding: 12px 0px;
 }
