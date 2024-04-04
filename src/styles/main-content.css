@@ -1,0 +1,47 @@
+body, table, input, button {
+    font: 16px/90% var(--font-inconsolata);
+}
+
+body, fieldset{  
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+fieldset {
+    border: 2px solid var(--line-table);
+}
+
+table thead{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+thead th , tbody td {
+    padding: 12px 16px;
+}
+
+tbody td {
+    color: gray;
+    border-top: 1px solid var(--line-table-color);
+    font-size: 15px;
+    line-height: 20px;
+}
+
+tbody td strong {
+    color: white;
+    font-size: 17px;
+    line-height: 15px;
+}
+
+tbody td small {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+tbody td button {
+    color: var(--button-color);
+}
+
+tbody td button:hover {
+    text-decoration: underline;
+}
